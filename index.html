@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe - Data Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">John Doe</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">John Doe</h1>
+      <p class="section__text__p2">Data Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="text-container">
+          <p>
+            Accomplished Data Engineer with 2 years' experience in handling ETL, Data warehousing, Data Modeling, MDM, Analytics, Reporting, documentation, Business requirements, and Cloud projects. Proficient in Cloud (Azure, AWS, Google Collab) and Big Data (Spark, Pyspark, SQL) ecosystems. Expertise in Azure Databricks, Azure SQL Database, MySQL, and MongoDB. Led key projects implementing MDM, Merge and Match rules in Pyspark for business needs. Demonstrated skills in cluster optimization, PySpark, SQL for seamless data integration. Proven ability to streamline workflows, enhance operational efficiency, and provide clear documentation. Documented Technical Specifications, Capacity Plans, and played a role in pre-sales activities for client presentations and proposals. Experienced in understanding business requirements and serving as a Scrum Master and Team Lead in DataPattern. Successfully served as a Content Creator and Admin for DataPattern's LinkedIn page.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Master Data Management in Azure Databricks and Automation</h2>
+          <p>
+            Phibro is a prominent B2B animal health company, I led a pivotal project centered on implementing MDM, workflow automation, and business intelligence. This initiative sought to boost operational efficiency, enhance customer insights, and streamline sales processes within a dynamic network of distributors, veterinarians, and clients, including livestock farmers, animal feed companies, and veterinarians.
+          </p>
+          <ul>
+            <li>End-to-end development of MDM architecture</li>
+            <li>Evaluated and selected cost-effective cloud platforms (Azure Databricks, Azure Cloud)</li>
+            <li>Implemented efficient cluster management in Databricks, optimizing Development and Jobs clusters</li>
+            <li>Developed PySpark code for automated data integration from FTP, CSV files to Azure SQL database</li>
+            <li>Collaborated on ETL tasks, maintaining data integrity in Azure Databricks using PySpark and SQL</li>
+            <li>Built custom rules for Google Maps API address validation in Databricks using PySpark</li>
+            <li>Utilized Trigger schedules in Databricks for streamlined automation of data workflows</li>
+            <li>Created Databricks pipelines and jobs for table creation, database management, and SCD logic</li>
+            <li>Established custom PySpark scripts for CRM loads in Databricks notebooks</li>
+            <li>Developed PowerBI reports, including daily promo reports, monthly/yearly sales reports, new clinics, distributor performance, and customer insights</li>
+            <li>Authored comprehensive documentation, including solution architecture, requirement documents, and clear billing documents for cloud services</li>
+          </ul>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Data warehousing and Dashboard (AWS and Power BI)</h2>
+          <p>
+            The "Banking Customer 360 " development project by DataPattern aims to provide comprehensive solutions to the banking and financial sector by aggregating customer information for a holistic view. The project focuses on enabling personalized customer experiences and facilitating effective communication by ensuring high-quality data. The entire data processing is implemented within the Amazon Web Services (AWS) ecosystem.
+          </p>
+          <ul>
+            <li>Extraction of customer data from AWS S3, ensuring secure and efficient sourcing</li>
+            <li>Utilized AWS Glue for metadata organization, transformation, and loading</li>
+            <li>Orchestrated seamless transfer of transformed data to Amazon Redshift for warehousing</li>
+            <li>Applied Master Data Management (MDM) principles in Amazon Redshift for data consistency</li>
+            <li>Established Amazon Redshift as the single reference point for comprehensive customer data</li>
+            <li>Designed and implemented optimized data warehousing components (tables, views, procedures)</li>
+            <li>Integrated Amazon Redshift with PowerBI for unified and insightful customer data visualization</li>
+            <li>Implemented robust data quality checks and validation processes, ensuring high data reliability</li>
+            <li>Created a Unified 360 Dashboard to bring all the customer information with Banking services</li>
+            <li>Created comprehensive documentation for the entire data processing pipeline</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Master Data Management in Azure Databricks</h2>
+          <p>Implemented MDM architecture and workflow automation in Azure Databricks</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Details</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">GitHub</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          <h2 class="experience-sub-title project-title">Banking Customer 360 Dashboard</h2>
+          <p>Developed a comprehensive dashboard for banking customer data visualization</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Details</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">GitHub</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">example@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 John Doe. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
